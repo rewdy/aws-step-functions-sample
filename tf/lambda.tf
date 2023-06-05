@@ -42,7 +42,7 @@ resource "aws_lambda_function" "step-1-lambda" {
   function_name = "step-functions-sample-step-1"
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "index.handler"
-  runtime       = "nodejs8.10"
+  runtime       = "nodejs18.x"
 }
 
 resource "aws_lambda_function" "step-2-lambda" {
@@ -50,6 +50,6 @@ resource "aws_lambda_function" "step-2-lambda" {
   function_name = "step-functions-sample-step-2"
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "index.handler"
-  runtime       = "nodejs8.10"
+  runtime       = "nodejs18.x"
 }
 

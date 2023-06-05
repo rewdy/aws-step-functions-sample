@@ -75,5 +75,5 @@ resource "aws_sfn_state_machine" "sfn_state_machine" {
 }
 EOF
 
-  depends_on = ["aws_lambda_function.step-1-lambda", "aws_lambda_function.step-2-lambda"]
+  depends_on = [aws_lambda_function.step-1-lambda, aws_lambda_function.step-2-lambda]
 }

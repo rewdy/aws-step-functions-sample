@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
+exports.handler = async (event, context) => {
   console.log(event);
   console.log(context);
   console.log("Step 2 fired!");
